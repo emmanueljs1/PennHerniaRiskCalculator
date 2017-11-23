@@ -1,25 +1,490 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User Agreement-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="User Agreement" id="BYZ-38-t0r" customClass="ViewController" customModule="PennHerniaRiskCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="fCC-1k-mR2"/>
+                        <viewControllerLayoutGuide type="bottom" id="JYr-7S-9LT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" autoresizesSubviews="NO" contentMode="top" id="X0j-UI-l5n">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Xx-WO-KXs">
+                                <rect key="frame" x="0.0" y="590" width="600" height="10"/>
+                                <color key="backgroundColor" red="0.58431372550000005" green="0.0" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsL-Y0-fPi">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="PHRC" id="bEu-b7-Pij"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hXl-iu-33f">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="540" placeholderIntrinsicHeight="80" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kIz-uk-ufP">
+                                <rect key="frame" x="30" y="80" width="540" height="354"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" editable="NO" text="Penn Hernia Risk Calculator User Agreement" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTc-ze-if2">
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.96822223279999997" blue="0.88854816420000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2o-b4-W4z">
+                                        <rect key="frame" x="0.0" y="58" width="540" height="246"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <string key="text"> The data used for the Penn Hernia Risk Calculator is based on the data collection and analysis of 12,373 patients that underwent gastrointestinal or gynecological procedures from January 1st, 2005 to June 1st, 2013. These patients were 18 years old or older within the University of Pennsylvania Health System, who went through a follow-up of 32.2 ± 26.6 months after surgery. This calculator does not give an exact percentage for the risk of developing a postoperative hernia for the specific models in the application; however, it gives the user an estimate based on extended research conducted by doctors at the University of Pennsylvania. 
+
+Please click “I agree” to continue.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFh-ox-sIo">
+                                        <rect key="frame" x="0.0" y="324" width="540" height="30"/>
+                                        <state key="normal" title="I agree">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="HRK-JD-1EQ" kind="show" id="Dcu-VJ-ttd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96822223278240482" blue="0.88854816416666593" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WsL-Y0-fPi" secondAttribute="trailing" constant="-20" id="0l9-ie-gT4"/>
+                            <constraint firstItem="WsL-Y0-fPi" firstAttribute="top" secondItem="fCC-1k-mR2" secondAttribute="bottom" id="ABS-mJ-MHS"/>
+                            <constraint firstItem="kIz-uk-ufP" firstAttribute="leading" secondItem="X0j-UI-l5n" secondAttribute="leadingMargin" constant="10" id="eZk-YH-uXm"/>
+                            <constraint firstItem="WsL-Y0-fPi" firstAttribute="leading" secondItem="X0j-UI-l5n" secondAttribute="leadingMargin" constant="-20" id="mYy-gd-T4p"/>
+                            <constraint firstItem="JYr-7S-9LT" firstAttribute="top" secondItem="6Xx-WO-KXs" secondAttribute="bottom" id="n6p-RD-4iw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kIz-uk-ufP" secondAttribute="trailing" constant="10" id="v6r-Pe-I1o"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="48" y="300"/>
+        </scene>
+        <!--Model-->
+        <scene sceneID="lDA-cH-yTJ">
+            <objects>
+                <viewController id="HRK-JD-1EQ" customClass="Model" customModule="PennHerniaRiskCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d1I-f2-Jef"/>
+                        <viewControllerLayoutGuide type="bottom" id="hf6-eA-UP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d7P-fh-XZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6o-Lk-SGm">
+                                <rect key="frame" x="0.0" y="590" width="600" height="10"/>
+                                <color key="backgroundColor" red="0.58431372550000005" green="0.0" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.58431372550000005" green="0.0" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="44" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar0-bV-vgV">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="PHRC" id="7xh-Vc-sMn"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiD-SG-gu2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="348" placeholderIntrinsicHeight="50" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KbM-Ef-EGi">
+                                <rect key="frame" x="20" y="82" width="560" height="177"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Which surgery did the patient have?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfu-TK-Oz3">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WSK-Tt-PxJ">
+                                        <rect key="frame" x="0.0" y="42" width="560" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-7E-n2K">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                                <state key="normal" title="General Surgery">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="pv9-58-Gfi" kind="show" id="2DO-AE-ihq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMk-Zi-o3g">
+                                                <rect key="frame" x="0.0" y="35" width="560" height="30"/>
+                                                <state key="normal" title="Bariatric Surgery">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="pv9-58-Gfi" kind="show" id="wOB-4E-E8I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ja-Go-GFi">
+                                                <rect key="frame" x="0.0" y="70" width="560" height="30"/>
+                                                <state key="normal" title="Gynecologic Surgery">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="pv9-58-Gfi" kind="show" id="zZn-FN-1KU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWw-8a-0zh">
+                                                <rect key="frame" x="0.0" y="105" width="560" height="30"/>
+                                                <state key="normal" title="Emergent Laparotomy">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="pv9-58-Gfi" kind="show" id="YF0-wI-Nx0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96822223279999997" blue="0.88854816420000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ar0-bV-vgV" firstAttribute="leading" secondItem="d7P-fh-XZ7" secondAttribute="leadingMargin" constant="-20" id="DYI-x6-vRS"/>
+                            <constraint firstItem="hf6-eA-UP2" firstAttribute="top" secondItem="M6o-Lk-SGm" secondAttribute="bottom" id="KKn-2a-YxP"/>
+                            <constraint firstItem="KbM-Ef-EGi" firstAttribute="leading" secondItem="d7P-fh-XZ7" secondAttribute="leadingMargin" id="PZH-Zx-PQq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ar0-bV-vgV" secondAttribute="trailing" constant="-20" id="Pmq-vS-5AS"/>
+                            <constraint firstItem="KbM-Ef-EGi" firstAttribute="trailing" secondItem="d7P-fh-XZ7" secondAttribute="trailingMargin" id="V08-YI-36x"/>
+                            <constraint firstItem="ar0-bV-vgV" firstAttribute="top" secondItem="d1I-f2-Jef" secondAttribute="bottom" id="YuO-fQ-XKD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bariatricButton" destination="YMk-Zi-o3g" id="nRa-dk-4Ca"/>
+                        <outlet property="emergentButton" destination="uWw-8a-0zh" id="cHh-fo-q2R"/>
+                        <outlet property="generalButton" destination="5QY-7E-n2K" id="xnm-AS-FFc"/>
+                        <outlet property="gynButton" destination="6ja-Go-GFi" id="Khi-Ul-8h4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xze-l1-cbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="1027"/>
+        </scene>
+        <!--Questions-->
+        <scene sceneID="CHl-O6-8zS">
+            <objects>
+                <viewController id="pv9-58-Gfi" customClass="Questions" customModule="PennHerniaRiskCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9AL-vf-kXp"/>
+                        <viewControllerLayoutGuide type="bottom" id="36f-to-MDR"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="fLx-TY-y6R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAz-ot-9dA">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Check all that apply" id="NCP-Oh-r3j">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Yhe-Jy-DnL">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="backButton:" destination="pv9-58-Gfi" id="V1w-pH-ag1"/>
+                                                <segue destination="HRK-JD-1EQ" kind="show" id="bDR-SK-uX2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Reset" id="WE9-Au-A4s">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="resetButton:" destination="pv9-58-Gfi" id="jOv-70-jfF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7Z-5H-PP7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPI-O6-0dk">
+                                <rect key="frame" x="0.0" y="64" width="600" height="528"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-ea-UaJ">
+                                        <rect key="frame" x="8" y="8" width="584" height="512"/>
+                                        <subviews>
+                                            <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="560" horizontalCompressionResistancePriority="560" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r3m-LN-JgD">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrw-ot-Spf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                                        <state key="normal" title="Done">
+                                                            <color key="titleColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="doneButton:" destination="pv9-58-Gfi" eventType="touchUpInside" id="a8b-7I-QZy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="r3m-LN-JgD" firstAttribute="top" secondItem="kTu-ea-UaJ" secondAttribute="top" id="59L-yY-gkb"/>
+                                            <constraint firstAttribute="bottom" secondItem="r3m-LN-JgD" secondAttribute="bottom" id="JkS-eD-fxj"/>
+                                            <constraint firstItem="r3m-LN-JgD" firstAttribute="width" secondItem="kTu-ea-UaJ" secondAttribute="width" id="PnB-WA-q2l"/>
+                                            <constraint firstItem="rrw-ot-Spf" firstAttribute="width" secondItem="kTu-ea-UaJ" secondAttribute="width" id="TKi-7w-Wq6"/>
+                                            <constraint firstAttribute="trailing" secondItem="r3m-LN-JgD" secondAttribute="trailing" id="Ye9-eV-Y9O"/>
+                                            <constraint firstItem="r3m-LN-JgD" firstAttribute="width" secondItem="kTu-ea-UaJ" secondAttribute="width" id="h8r-L7-NQd"/>
+                                            <constraint firstItem="r3m-LN-JgD" firstAttribute="leading" secondItem="kTu-ea-UaJ" secondAttribute="leading" id="zfa-Co-JTw"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="h8r-L7-NQd"/>
+                                                <exclude reference="TKi-7w-Wq6"/>
+                                            </mask>
+                                        </variation>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.96822223279999997" blue="0.88854816420000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kTu-ea-UaJ" firstAttribute="leading" secondItem="zPI-O6-0dk" secondAttribute="leading" id="3QY-6h-OvX"/>
+                                    <constraint firstAttribute="trailing" secondItem="kTu-ea-UaJ" secondAttribute="trailing" id="EqH-ZF-l7f"/>
+                                    <constraint firstItem="kTu-ea-UaJ" firstAttribute="top" secondItem="zPI-O6-0dk" secondAttribute="top" constant="10" id="UXe-WI-QXd"/>
+                                    <constraint firstAttribute="bottom" secondItem="kTu-ea-UaJ" secondAttribute="bottom" constant="10" id="fKg-It-Cgr"/>
+                                    <constraint firstItem="kTu-ea-UaJ" firstAttribute="height" secondItem="zPI-O6-0dk" secondAttribute="height" id="zoG-FY-91E"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zoG-FY-91E"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="uAz-ot-9dA" secondAttribute="trailing" constant="-20" id="OQB-I6-Fet"/>
+                            <constraint firstItem="uAz-ot-9dA" firstAttribute="top" secondItem="9AL-vf-kXp" secondAttribute="bottom" id="Uq6-Ru-cUF"/>
+                            <constraint firstItem="uAz-ot-9dA" firstAttribute="leading" secondItem="fLx-TY-y6R" secondAttribute="leadingMargin" constant="-20" id="aNK-6C-BrE"/>
+                            <constraint firstItem="zPI-O6-0dk" firstAttribute="top" secondItem="uAz-ot-9dA" secondAttribute="bottom" id="j9B-D6-pb1"/>
+                            <constraint firstItem="36f-to-MDR" firstAttribute="top" secondItem="zPI-O6-0dk" secondAttribute="bottom" constant="10" id="p2C-m8-alR"/>
+                            <constraint firstItem="zPI-O6-0dk" firstAttribute="width" secondItem="fLx-TY-y6R" secondAttribute="width" id="ydQ-ME-cHa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="320-yi-ubE"/>
+                    <connections>
+                        <outlet property="doneButton" destination="rrw-ot-Spf" id="I0g-uf-PS6"/>
+                        <outlet property="questionsStackView" destination="r3m-LN-JgD" id="RqV-We-4bx"/>
+                        <segue destination="9Ru-eE-Psa" kind="show" identifier="toRaceQuestion" id="D09-qh-2l2"/>
+                        <segue destination="0zU-0F-93N" kind="show" identifier="toScore" id="enn-jX-H3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOc-fq-V4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="1786"/>
+        </scene>
+        <!--Race Question-->
+        <scene sceneID="odY-rZ-pyt">
+            <objects>
+                <viewController id="9Ru-eE-Psa" customClass="RaceQuestion" customModule="PennHerniaRiskCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cI4-gX-bIo"/>
+                        <viewControllerLayoutGuide type="bottom" id="l7n-2Z-PDd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cOg-Vi-hkh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG4-Qr-CMP">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="PHRC" id="svt-Va-6Pw">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="1vD-ZQ-bVq">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="pv9-58-Gfi" kind="show" id="umr-ON-v3u"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="079-e4-jlP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6pY-Vv-4NZ">
+                                <rect key="frame" x="0.0" y="590" width="600" height="10"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MUf-UB-yby">
+                                <rect key="frame" x="20" y="82" width="560" height="240"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="What is the patient's race?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8N-yi-jDU">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.96822223279999997" blue="0.88854816420000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e58-ER-IIz">
+                                        <rect key="frame" x="0.0" y="70" width="560" height="170"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlP-13-pJD">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                                <state key="normal" title="Asian">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0zU-0F-93N" kind="show" id="iYx-dw-Qng"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdR-87-a3u">
+                                                <rect key="frame" x="0.0" y="35" width="560" height="30"/>
+                                                <state key="normal" title="African American">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0zU-0F-93N" kind="show" id="IuH-1O-fY1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPT-Uh-4NA">
+                                                <rect key="frame" x="0.0" y="70" width="560" height="30"/>
+                                                <state key="normal" title="Caucasian">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0zU-0F-93N" kind="show" id="Yas-R6-awW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGU-UA-Iza">
+                                                <rect key="frame" x="0.0" y="105" width="560" height="30"/>
+                                                <state key="normal" title="Hispanic / Native American">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0zU-0F-93N" kind="show" id="hd2-5T-U8J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcI-RP-VG5">
+                                                <rect key="frame" x="0.0" y="140" width="560" height="30"/>
+                                                <state key="normal" title="Other">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0zU-0F-93N" kind="show" id="Eq4-8A-Z50"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96822223279999997" blue="0.88854816420000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MUf-UB-yby" firstAttribute="leading" secondItem="cOg-Vi-hkh" secondAttribute="leadingMargin" id="69w-Go-Mtz"/>
+                            <constraint firstItem="fG4-Qr-CMP" firstAttribute="top" secondItem="cI4-gX-bIo" secondAttribute="bottom" id="Pqm-nJ-sg8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fG4-Qr-CMP" secondAttribute="trailing" constant="-20" id="XSP-As-312"/>
+                            <constraint firstItem="l7n-2Z-PDd" firstAttribute="top" secondItem="6pY-Vv-4NZ" secondAttribute="bottom" id="nHV-gY-cva"/>
+                            <constraint firstItem="fG4-Qr-CMP" firstAttribute="leading" secondItem="cOg-Vi-hkh" secondAttribute="leadingMargin" constant="-20" id="p9q-nc-e2Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MUf-UB-yby" secondAttribute="trailing" id="uIj-Yy-x5n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="afriButton" destination="tdR-87-a3u" id="nj5-x1-Yh5"/>
+                        <outlet property="asianButton" destination="hlP-13-pJD" id="Wyq-xi-f3X"/>
+                        <outlet property="caucButton" destination="BPT-Uh-4NA" id="Vf3-3z-E1L"/>
+                        <outlet property="hispButton" destination="XGU-UA-Iza" id="34Q-FI-zbE"/>
+                        <outlet property="otherButton" destination="FcI-RP-VG5" id="oYs-5z-lUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nf2-1a-KCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="2465"/>
+        </scene>
+        <!--Score-->
+        <scene sceneID="3H0-rR-pWE">
+            <objects>
+                <viewController id="0zU-0F-93N" customClass="Score" customModule="PennHerniaRiskCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kwo-M4-JqG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cf1-LH-sTL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zRL-XH-X7a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFB-Jz-T1v">
+                                <rect key="frame" x="0.0" y="590" width="600" height="10"/>
+                                <color key="backgroundColor" red="0.58431372550000005" green="0.0" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knE-WC-RXG">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="PHRC" id="pv0-f9-3FZ">
+                                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="QIH-38-dgT">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="HRK-JD-1EQ" kind="show" id="O7i-rS-jaM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mae-3k-ZfO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.1450980392" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96822223279999997" blue="0.88854816420000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cf1-LH-sTL" firstAttribute="top" secondItem="tFB-Jz-T1v" secondAttribute="bottom" id="1MV-q1-lkd"/>
+                            <constraint firstItem="knE-WC-RXG" firstAttribute="top" secondItem="Kwo-M4-JqG" secondAttribute="bottom" id="FaE-16-526"/>
+                            <constraint firstItem="knE-WC-RXG" firstAttribute="leading" secondItem="zRL-XH-X7a" secondAttribute="leadingMargin" constant="-20" id="RpK-Tw-TO2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="knE-WC-RXG" secondAttribute="trailing" constant="-20" id="cWl-Ja-Q1y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThV-Ys-EHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="3140"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bDR-SK-uX2"/>
+        <segue reference="umr-ON-v3u"/>
+        <segue reference="iYx-dw-Qng"/>
+    </inferredMetricsTieBreakers>
 </document>

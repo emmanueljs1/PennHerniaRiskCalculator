@@ -2,7 +2,7 @@
 //  PennHerniaRiskCalculatorTests.swift
 //  PennHerniaRiskCalculatorTests
 //
-//  Created by Javier on 6/27/16.
+//  Created by Emmanuel Suarez and Brailinson Disla
 //  Copyright © 2016 PennSHPEAppDevelopment. All rights reserved.
 //
 

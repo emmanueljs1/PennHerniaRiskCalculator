@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PennHerniaRiskCalculator
 //
-//  Created by Javier on 6/27/16.
+//  Created by Emmanuel Suarez and Brailinson Disla
 //  Copyright © 2016 PennSHPEAppDevelopment. All rights reserved.
 //
 
@@ -40,7 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 
